@@ -27,5 +27,6 @@ for tablerow in tablerows:
         segunda_dose = int(infos[2].get_text().replace(".",""))
         total = int(infos[3].get_text().replace(".",""))
         comando_registro = f"INSERT INTO infos_vacinacao VALUES ('{grupo}', '{primeira_dose}', '{segunda_dose}', '{total}', '{data}')"
-        cursor.execute(comando_registro)
-        cursor.commit()
+        print(comando_registro)
+        #cursor.execute(comando_registro)
+        #cursor.commit()
